@@ -16,8 +16,9 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link href="style.css" rel="stylesheet"></link>
 <script src="js/script.js"></script>
+<script src="js/tabs.js"></script>
 </head>
-<body>
+<body onload="openCourse(event, 'cs61a')">
 
 <!--<h1>Welcome to my website!</h1>-->
 <!--<p>Ceci n'est pas un paragraphe.</p>-->
@@ -41,8 +42,42 @@
 <!--</script>-->
 
 
-<div class="main">coming soon i promise</div>
 <!--    <p>/p>-->
+    
+<div class="tab">
+  <button class="tablinks" onclick="openCourse(event, 'cs61a')">CS 61A</button>
+  <button class="tablinks" onclick="openCourse(event, 'cubedecal')">Rubik's Cube Decal</button>
+</div>
+
+<!-- Tab content -->
+<div id="cs61a" class="tabcontent">
+    <p>Official course resources: <a href="https://cs61a.org/resources.html">https://cs61a.org/resources.html</a></p>
+  <h4>Annotated CSM Worksheets</h4>
+  <ul>
+    <li> check back soon!</li>
+    </ul>
+</div>
+
+<div id="cubedecal" class="tabcontent">
+  <div>
+  <h3>Beginner's Section</h3>
+  <ul>
+    <li>Full guide on how to solve the cube (this pretty closely follows the method which I'll be teaching, so you can use this if you'd like to work ahead): <a href="https://www.rubiks.com/en-us/how-to-solve-rubiks-cube">https://www.rubiks.com/en-us/how-to-solve-rubiks-cube</a></li>
+      <li>PDF version of the above link: <a href="http://lghttp.60951.nexcesscdn.net/80487FB/Downloads/resources/downloads/Rubiks_3x3_Solution_Guide1.pdf">(click to download)</a></li>
+    </ul>
+</div>
+    
+    <div>
+    <h3>Advanced Section</h3>
+        <ul>
+            <li>Hunting analogy for F2L: <a href="http://rishidoshi.blogspot.com/">http://rishidoshi.blogspot.com/</a></li>
+        <li>Full F2L, OLL, PLL guide (don't bother with the third page of this pdf until you've already mastered two-look OLL): <a href="http://badmephisto.com/badmephisto-speedcubing-method.pdf">http://badmephisto.com/badmephisto-speedcubing-method.pdf</a></li>
+        </ul>
+    
+    
+    </div>
+</div>
+
 
 
 </body>
